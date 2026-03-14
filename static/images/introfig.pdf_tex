@@ -1,0 +1,72 @@
+%% Creator: Inkscape 1.4.2 (ebf0e940, 2025-05-08), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'introfig.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{595.27559055bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.88761902)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{figs/introfig/introfig.pdf}}%
+    \put(0.05960774,0.54479744){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\small{(a)}\end{tabular}}}}%
+    \put(0.28506577,0.54479744){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\small{(b)}\end{tabular}}}}%
+    \put(0.56904046,0.54479744){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\small{(c)}\end{tabular}}}}%
+    \put(0.85301514,0.54479744){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\small{(d)}\end{tabular}}}}%
+    \put(0.05386284,0.3833442){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\scriptsize{Down-}\\\scriptsize{scaled 4$\times$}\end{tabular}}}}}%
+    \put(0.05386284,0.14398956){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\scriptsize{Recorded}\\\scriptsize{4$\times$ res. diff.}\end{tabular}}}}}%
+    \put(0.31265549,0.00541113){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\small{(e)}\end{tabular}}}}%
+    \put(0.79179992,0.00533731){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\small{(f)}\end{tabular}}}}%
+    \put(0.14849113,0.5065038){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\scriptsize{High res}.\end{tabular}}}}%
+    \put(0.26463891,0.50642261){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\scriptsize{Low res.}\end{tabular}}}}%
+    \put(0.62726085,0.5065038){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\scriptsize{High res}.\end{tabular}}}}%
+    \put(0.74340885,0.50642261){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\scriptsize{Low res.}\end{tabular}}}}%
+    \put(0.89711928,0.50642261){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\scriptsize{SR result}\end{tabular}}}}%
+    \put(0.42338885,0.50642261){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0.80000001}\smash{\begin{tabular}[t]{c}\scriptsize{SR result}\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   color: var(--text-primary);
   line-height: 1.6;
   font-size: 16px;
@@ -109,13 +109,13 @@ body {
 }
 
 .teaser {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Google Sans', sans-serif;
 }
 
 
 /* Publication Content Styling */
 .publication-title {
-    font-family: 'Inter', sans-serif !important;
+    font-family: 'Google Sans', sans-serif !important;
     font-weight: 800 !important;
     color: var(--text-primary) !important;
     margin-bottom: 2rem !important;
@@ -146,7 +146,7 @@ body {
 }
 
 .publication-authors {
-    font-family: 'Inter', sans-serif !important;
+    font-family: 'Google Sans', sans-serif !important;
     font-weight: 500;
     margin-bottom: 1.5rem;
 }
@@ -310,7 +310,7 @@ body {
 
 /* Section Titles */
 .title.is-3 {
-  font-family: 'Inter', sans-serif !important;
+  font-family: 'Google Sans', sans-serif !important;
   font-weight: 700 !important;
   color: var(--text-primary);
   margin-bottom: 2rem !important;
@@ -333,7 +333,7 @@ body {
 /* Content Improvements */
 .content.has-text-justified {
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.5;
   color: var(--text-secondary);
 }
 
@@ -476,7 +476,7 @@ code {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Google Sans', sans-serif;
 }
 
 .more-works-btn:hover {
