@@ -347,33 +347,33 @@
     <section class="hero teaser">
       <div class="container is-max-desktop">
         <div class="hero-body">
-          <div class="columns is-vcentered">
-            <div class="column is-7">
-              <!-- Banner Video -->
+          <!-- Full-width Banner Video -->
+          <div class="columns is-centered">
+            <div class="column is-full">
               <video poster="" id="tree" autoplay controls muted loop width="100%" preload="metadata">
                 <source src="static/videos/Vodasure_banner.mp4" type="video/mp4">
               </video>
             </div>
-            <div class="column is-5">
-              <!-- Highlights / Bullets -->
-              <div class="content has-text-left">
-                <h2 class="title is-4">Highlights</h2>
-                <ul>
-                  <!-- TODO: Edit your bullet points here -->
-                  <li><strong>Large-scale dataset:</strong> Introduces VoDaSuRe with paired real high- and low-resolution volumetric scans.</li>
-                  <li><strong>Domain shift revealed:</strong> Models trained on synthetic downscaled data produce artificially sharper predictions.</li>
-                  <li><strong>Real scan smoothing:</strong> Training on real low-resolution scans reveals fine structure smoothing instead of recovery.</li>
-                  <li><strong>Baseline evaluation:</strong> Proves that progress in volumetric SR requires learning from real, complex scans.</li>
-                </ul>
-                <div style="margin-top: 1.5rem;">
-                  <a href="https://github.com/AugustHoeg/VoDaSuRe" target="_blank" class="button is-small is-rounded is-dark">
-                    <span class="icon"><i class="fab fa-github"></i></span>
-                    <span>VoDaSuRe Code & Dataset</span>
-                  </a>
-                </div>
-              </div>
+          </div>
+
+          <!-- 2-Column Highlights below video -->
+          <div class="columns is-centered" style="margin-top: 1.5rem;">
+            <div class="column is-half content has-text-left">
+              <ul>
+                <!-- TODO: Edit your first column bullet points here -->
+                <li><strong>Large-scale dataset:</strong> Introduces VoDaSuRe with paired real high- and low-resolution volumetric scans.</li>
+                <li><strong>Domain shift revealed:</strong> Models trained on synthetic downscaled data produce artificially sharper predictions.</li>
+              </ul>
+            </div>
+            <div class="column is-half content has-text-left">
+              <ul>
+                <!-- TODO: Edit your second column bullet points here -->
+                <li><strong>Real scan smoothing:</strong> Training on real low-resolution scans reveals fine structure smoothing instead of recovery.</li>
+                <li><strong>Baseline evaluation:</strong> Proves that progress in volumetric SR requires learning from real, complex scans.</li>
+              </ul>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
