@@ -5,7 +5,7 @@ import os
 input_folder = "static/images/"
 
 # Output file
-output_file = "static/images/stitched.jpg"
+output_file = "static/images/viz_stitched.jpg"
 
 # Get all jpg files and sort them
 file_names = [
@@ -36,6 +36,9 @@ x_offset = 0
 for img in images:
     stitched_image.paste(img, (x_offset, 0))
     x_offset += img.width
+
+# Remove 5 pixels from the bottom
+stitched_image = stitched_image.crop((0, 0, stitched_image.width, stitched_image.height - 5))
 
 # Save result
 stitched_image.save(output_file)
