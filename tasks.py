@@ -7,4 +7,4 @@ def git(ctx, message=None):
     if message is None:
         message = "update"
     ctx.run(f"git commit -m '{message}'")
-    ctx.run(f"git push origin main")
+    ctx.run(f"git push origin master")
