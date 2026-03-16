@@ -343,56 +343,41 @@
     </section>
 
 
-    <!-- Teaser video-->
+    <!-- Teaser video and Highlights -->
     <section class="hero teaser">
       <div class="container is-max-desktop">
         <div class="hero-body">
-          <!-- TODO: Replace with your teaser video -->
-          <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-            <!-- TODO: Add your video file path here -->
-            <source src="static/videos/Vodasure_banner.mp4" type="video/mp4">
-          </video>
-          <!-- TODO: Replace with your video description -->
-          <h2 class="subtitle has-text-centered">
-            Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat
-            pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
-          </h2>
-        </div>
-      </div>
-    </section>
-    <!-- End teaser video -->
-
-    <!-- Paper abstract -->
-    <section class="section hero is-light">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Abstract</h2>
-            <div class="content has-text-justified">
-              <!-- TODO: Replace with your paper abstract -->
-              <p>
-                Recent advances in volumetric super-resolution (SR) have demonstrated great performance in medical and
-                scientific imaging, with transformer- and CNN-based approaches achieving impressive results even at
-                extreme scaling factors. We show that this impressive performance largely stems from training on
-                downsampled data rather than real low-resolution scans. Such a training setup arises partly from the
-                limited availability of paired high- and low-resolution volumetric datasets. To address this gap, we
-                introduce VoDaSuRe, a large-scale volumetric dataset containing paired high- and low-resolution scans.
-                When training models on VoDaSuRe, we reveal a significant discrepancy: models trained on downscaled data
-                produce substantially sharper predictions than those trained on real low-resolution scans, which smooth
-                fine structures. Conversely, applying downscaled trained models to real scans preserves more structure
-                but is inaccurate. Our findings suggest that current SR methods are overstated - when applied to real
-                data, they do not recover structures lost in low-resolution scans but instead predict a smoothed
-                average. We argue that progress in deep learning-based volumetric SR requires datasets with paired real
-                scans of high complexity, such as VoDaSuRe. Our dataset and code are publicly available at
-                <a href="https://github.com/AugustHoeg/VoDaSuRe"
-                  target="_blank">https://github.com/AugustHoeg/VoDaSuRe</a>.
-              </p>
+          <div class="columns is-vcentered">
+            <div class="column is-7">
+              <!-- Banner Video -->
+              <video poster="" id="tree" autoplay controls muted loop width="100%" preload="metadata">
+                <source src="static/videos/Vodasure_banner.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-5">
+              <!-- Highlights / Bullets -->
+              <div class="content has-text-left">
+                <h2 class="title is-4">Highlights</h2>
+                <ul>
+                  <!-- TODO: Edit your bullet points here -->
+                  <li><strong>Large-scale dataset:</strong> Introduces VoDaSuRe with paired real high- and low-resolution volumetric scans.</li>
+                  <li><strong>Domain shift revealed:</strong> Models trained on synthetic downscaled data produce artificially sharper predictions.</li>
+                  <li><strong>Real scan smoothing:</strong> Training on real low-resolution scans reveals fine structure smoothing instead of recovery.</li>
+                  <li><strong>Baseline evaluation:</strong> Proves that progress in volumetric SR requires learning from real, complex scans.</li>
+                </ul>
+                <div style="margin-top: 1.5rem;">
+                  <a href="https://github.com/AugustHoeg/VoDaSuRe" target="_blank" class="button is-small is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>VoDaSuRe Code & Dataset</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End paper abstract -->
+    <!-- End Teaser video and Highlights -->
 
 
     <!-- Image carousel -->
