@@ -8,6 +8,8 @@ input_folder = os.path.join(PROJECT_ROOT, "static", "pdfs")
 output_file = os.path.join(PROJECT_ROOT, "static", "pdfs", "examples_stitched.pdf")
 
 orientation = "vertical"
+save_as_image = True
+image_format = "png" # or "jpg"
 
 file_names = [
     "Examples_1.pdf",
@@ -62,5 +64,12 @@ for (doc, page), (w, h) in zip(docs, sizes):
 
 # Save result
 out.save(output_file)
-
 print(f"Saved stitched PDF as {output_file}")
+
+# Option to save as image
+if save_as_image:
+    image_output_file = os.path.join(PROJECT_ROOT, "static", "images", f"examples_stitched.{image_format}")
+    # Render the page to an image
+    pix = new_page.get_pixmap(dpi=300) 
+    pix.save(image_output_file)
+    print(f"Saved stitched image as {image_output_file}")
