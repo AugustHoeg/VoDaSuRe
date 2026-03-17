@@ -4,7 +4,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(BASE_DIR)  # go up one folder
 
-out_filename = "domain_shift"
+out_filename = "examples_stitched"
 input_folder = os.path.join(PROJECT_ROOT, "static", "pdfs")
 output_file = os.path.join(PROJECT_ROOT, "static", "pdfs", out_filename + ".pdf")
 
@@ -13,8 +13,10 @@ save_as_image = True
 image_format = "png" # or "jpg"
 
 file_names = [
-    "Ablation_input_ablation_input_27_256_website.pdf",
-    "Ablation_input_ablation_input_18_256_website.pdf",
+    "Examples_1.pdf",
+    "Examples_2.pdf",
+    "Examples_4.pdf",
+    "Examples_3.pdf",
 ]
 
 files = [os.path.join(input_folder, f) for f in file_names]
