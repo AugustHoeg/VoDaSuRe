@@ -249,7 +249,7 @@
 
   <main id="main-content">
     <section class="hero">
-      <div class="hero-body">
+      <div class="hero-body" style="padding-bottom: 1rem;">
         <div class="container is-max-desktop">
           <div class="columns is-centered">
             <div class="column has-text-centered">
@@ -357,12 +357,12 @@
           </div>
 
           <!-- Teaser Intro Text -->
-          <div class="columns is-centered" style="margin-top: 3rem;">
-            <div class="column is-full content has-text-justified">
-              <p class="is-size-4">
+          <div class="columns is-centered" style="margin-top: 0;">
+            <div class="column is-full content has-text-justified" style="margin-bottom: 0;">
+              <p class="is-size-6" style="margin-bottom: 0;">
                 We present VoDaSuRe, a large-scale dataset tailored for real-world volumetric super-resolution.
                 Comprising 16 samples
-                spanning diverse microstructures and more than 200&times;10<sup>9</sup> voxels in total, VoDaSuRe is the
+                spanning diverse microstructures and more than 200 gigavoxels of 3D data, VoDaSuRe is the
                 largest volumetric dataset to date to include both synthetically downsampled <em>and</em> physically
                 acquired, co-registered data for all scans. This makes VoDaSuRe ideal for studying realistic
                 degradations effects in real volumetric data.
@@ -371,7 +371,7 @@
           </div>
 
           <!-- 2-Column Highlights below video -->
-          <div class="columns is-centered" style="margin-top: 1.5rem;">
+          <div class="columns is-centered" style="margin-top: 0.5rem;">
             <div class="column is-half content has-text-left">
               <ul>
                 <!-- TODO: Edit your first column bullet points here -->
@@ -404,7 +404,8 @@
           <div class="column is-full">
             <h2 class="title is-3">Sample Overview</h2>
             <figure class="image">
-              <img src="static/images/viz_stitched.jpg" alt="Sample Overview Visualization" loading="lazy" />
+              <img src="static/images/viz_stitched_no_background.png" alt="Sample Overview Visualization"
+                loading="lazy" />
               <figcaption class="subtitle has-text-centered" style="margin-top: 1rem;">
                 <!-- TODO: Update with your specific figure caption -->
                 Overview of the different material samples included in the VoDaSuRe dataset.
