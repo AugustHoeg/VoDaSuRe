@@ -348,7 +348,7 @@
       <div class="container is-max-desktop">
         <div class="hero-body">
           <!-- Full-width Banner Video -->
-          <div class="columns is-centered">
+          <div class="columns is-centered" style="margin-bottom: 0;">
             <div class="column is-full">
               <video poster="" id="tree" autoplay controls muted loop width="100%" preload="metadata">
                 <source src="static/videos/Vodasure_banner_v4.mp4" type="video/mp4">
@@ -364,30 +364,36 @@
                 Comprising 16 samples
                 spanning diverse microstructures and more than 200 gigavoxels of 3D data, VoDaSuRe is the
                 largest volumetric dataset to date to include both synthetically downsampled <em>and</em> physically
-                acquired, co-registered data for all scans. This makes VoDaSuRe ideal for studying realistic
-                degradations effects in real volumetric data.
+                acquired, low-resolution data for all scans. This makes VoDaSuRe ideal for studying realistic
+                degradation effects in real volumetric data.
               </p>
             </div>
           </div>
 
           <!-- 2-Column Highlights below video -->
-          <div class="columns is-centered" style="margin-top: 0;">
+          <div class="columns is-centered" style="margin-top: 1.5rem;">
             <div class="column is-half content has-text-left" style="padding-top: 0;">
               <ul style="margin-top: 0;">
                 <!-- TODO: Edit your first column bullet points here -->
-                <li><strong>Large-scale dataset:</strong> Introduces VoDaSuRe with paired real high- and low-resolution
-                  volumetric scans.</li>
-                <li><strong>Domain shift revealed:</strong> Models trained on synthetic downscaled data produce
-                  artificially sharper predictions.</li>
+                <li><strong>True multi-resolution data:</strong> VoDaSuRe includes scanned high- and
+                  low-resolution volumes for all samples.</li>
+                <li><strong>Diverse microstructures:</strong> Spans diverse structural complexity, including
+                  wood, composites, and bone.</li>
+                <li><strong>Large-scale dataset:</strong> Comprises 32 micro-CT scans of 16 samples,
+                  totalling more than 200 gigavoxels of 3D data.</li>
               </ul>
             </div>
             <div class="column is-half content has-text-left" style="padding-top: 0;">
               <ul style="margin-top: 0;">
                 <!-- TODO: Edit your second column bullet points here -->
-                <li><strong>Real scan smoothing:</strong> Training on real low-resolution scans reveals fine structure
-                  smoothing instead of recovery.</li>
-                <li><strong>Baseline evaluation:</strong> Proves that progress in volumetric SR requires learning from
-                  real, complex scans.</li>
+                <li><strong>Hierarchical data format:</strong> VoDaSuRe is stored in multi-scale OME-Zarr format
+                  enabling easy resolution access.</li>
+                <li><strong>Efficient data loading:</strong> Optimized OME-Zarr dataloader enables large-scale
+                  volumetric
+                  training and inference.</li>
+                <li><strong>Reproducible framework:</strong> We release VoxelSR, a PyTorch framework for
+                  volumetric SR including several baselines.</li>
+
               </ul>
             </div>
           </div>
