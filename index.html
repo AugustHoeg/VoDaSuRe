@@ -471,9 +471,9 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-full">
-            <h2 class="title is-3">Sample Overview</h2>
+            <h2 class="title is-3">Microstructural Complexity</h2>
             <figure class="image">
-              <img src="static/images/viz_stitched_no_background.png" alt="Sample Overview Visualization"
+              <img src="static/images/viz_stitched_no_background.png" alt="Microstructural Complexity Visualization"
                 loading="lazy" />
               <figcaption class="subtitle has-text-centered" style="margin-top: 1rem;">
                 <!-- TODO: Update with your specific figure caption -->
@@ -516,6 +516,149 @@
       </div>
     </section>
     <!-- End Results Text Section -->
+
+    <!-- Overview of VoDaSuRe Section (Dataset Table) -->
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Overview of VoDaSuRe</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <!-- Dataset Table -->
+            <div class="table-container" style="margin-top: 2rem;">
+              <table class="table is-fullwidth is-striped is-hoverable has-text-centered">
+                <thead>
+                  <tr>
+                    <th class="has-text-left">Sample name</th>
+                    <th class="has-text-centered">High-resolution</th>
+                    <th class="has-text-centered">Low-resolution</th>
+                    <th class="has-text-centered">Registered</th>
+                    <th class="has-text-centered">Slice split (train/test)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="has-text-left">Bamboo</td>
+                    <td>5440 &times; 1920 &times; 1920</td>
+                    <td>3520 &times; 1920 &times; 1920</td>
+                    <td>1360 &times; 480 &times; 480</td>
+                    <td>1360 / 120</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left">Cardboard</td>
+                    <td>5120 &times; 1920 &times; 1920</td>
+                    <td>3360 &times; 1920 &times; 1920</td>
+                    <td>1280 &times; 480 &times; 480</td>
+                    <td>1280 / 120</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left">Cypress</td>
+                    <td>5440 &times; 1920 &times; 1920</td>
+                    <td>1920 &times; 1920 &times; 1920</td>
+                    <td>1360 &times; 480 &times; 480</td>
+                    <td>1240 / 120</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left">Elm</td>
+                    <td>5440 &times; 1920 &times; 1920</td>
+                    <td>3520 &times; 1920 &times; 1920</td>
+                    <td>1360 &times; 480 &times; 480</td>
+                    <td>3200 / 120</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left">MDF</td>
+                    <td>4800 &times; 1920 &times; 1920</td>
+                    <td>3520 &times; 1920 &times; 1920</td>
+                    <td>1200 &times; 480 &times; 480</td>
+                    <td>1080 / 120</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left">Ox bone</td>
+                    <td>4960 &times; 1920 &times; 1920</td>
+                    <td>1920 &times; 1920 &times; 1920</td>
+                    <td>1240 &times; 480 &times; 480</td>
+                    <td>1120 / 120</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left">Oak</td>
+                    <td>5440 &times; 1920 &times; 1920</td>
+                    <td>3200 &times; 1920 &times; 1920</td>
+                    <td>1360 &times; 480 &times; 480</td>
+                    <td>1240 / 120</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left" style="border-bottom-width: 2px;">Larch</td>
+                    <td style="border-bottom-width: 2px;">5120 &times; 1920 &times; 1920</td>
+                    <td style="border-bottom-width: 2px;">3200 &times; 1920 &times; 1920</td>
+                    <td style="border-bottom-width: 2px;">1280 &times; 480 &times; 480</td>
+                    <td style="border-bottom-width: 2px;">1160 / 120</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left">Femur 15</td>
+                    <td>1600 &times; 1280 &times; 1920</td>
+                    <td>600 &times; 600 &times; 600</td>
+                    <td>400 &times; 320 &times; 480</td>
+                    <td>Train</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left">Femur 21</td>
+                    <td>1280 &times; 1600 &times; 1760</td>
+                    <td>600 &times; 600 &times; 600</td>
+                    <td>320 &times; 400 &times; 440</td>
+                    <td>Train</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left">Femur 74</td>
+                    <td>1120 &times; 1760 &times; 1600</td>
+                    <td>600 &times; 600 &times; 600</td>
+                    <td>280 &times; 440 &times; 400</td>
+                    <td>Train</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left" style="border-bottom-width: 2px;">Femur 01</td>
+                    <td style="border-bottom-width: 2px;">960 &times; 1440 &times; 1600</td>
+                    <td style="border-bottom-width: 2px;">600 &times; 600 &times; 600</td>
+                    <td style="border-bottom-width: 2px;">240 &times; 360 &times; 400</td>
+                    <td style="border-bottom-width: 2px;">Test</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left">Vertebrae A</td>
+                    <td>1920 &times; 1920 &times; 1920</td>
+                    <td>800 &times; 960 &times; 640</td>
+                    <td>480 &times; 480 &times; 480</td>
+                    <td>Train</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left">Vertebrae B</td>
+                    <td>1920 &times; 1920 &times; 1920</td>
+                    <td>800 &times; 960 &times; 640</td>
+                    <td>480 &times; 480 &times; 480</td>
+                    <td>Train</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left">Vertebrae C</td>
+                    <td>1920 &times; 1920 &times; 1920</td>
+                    <td>960 &times; 800 &times; 960</td>
+                    <td>480 &times; 480 &times; 480</td>
+                    <td>Train</td>
+                  </tr>
+                  <tr>
+                    <td class="has-text-left">Vertebrae D</td>
+                    <td>1920 &times; 1920 &times; 1920</td>
+                    <td>960 &times; 800 &times; 960</td>
+                    <td>480 &times; 480 &times; 480</td>
+                    <td>Test</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="has-text-centered is-size-6 mt-2">
+                <em>Overview of dataset samples with volume shapes and slice splits.</em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Overview of VoDaSuRe Section -->
 
     <!-- Image carousel -->
     <section class="hero is-small is-dark">
