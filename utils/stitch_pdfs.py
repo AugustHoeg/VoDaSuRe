@@ -4,7 +4,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(BASE_DIR)  # go up one folder
 
-out_filename = "domain_shift"
+out_filename = "domain_shift_v2"
 input_folder = os.path.join(PROJECT_ROOT, "static", "pdfs")
 output_file = os.path.join(PROJECT_ROOT, "static", "pdfs", out_filename + ".pdf")
 
