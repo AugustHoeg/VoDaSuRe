@@ -396,7 +396,7 @@
               </ul>
             </div>
             <div class="column is-half content has-text-left" style="padding-top: 0;">
-              <ul style="list-style: none; margin-left: 0; margin-top: 0;">
+              <ul style="list-style: none; margin-left: 0; margin-top: 0; margin-bottom: 0;">
                 <!-- TODO: Edit your second column bullet points here -->
                 <li style="display: flex; align-items: flex-start; margin-bottom: 0.5rem;">
                   <span class="icon" style="color: #363636; margin-right: 0.5rem; flex-shrink: 0;"><i
@@ -411,7 +411,7 @@
                     volumetric
                     training and inference.</div>
                 </li>
-                <li style="display: flex; align-items: flex-start; margin-bottom: 0.5rem;">
+                <li style="display: flex; align-items: flex-start; margin-bottom: 0;">
                   <span class="icon" style="color: #363636; margin-right: 0.5rem; flex-shrink: 0;"><i
                       class="fas fa-check"></i></span>
                   <div><strong>Reproducible framework:</strong> We release VoxelSR, a PyTorch framework for
@@ -427,30 +427,24 @@
     <!-- End Teaser video and Highlights -->
 
     <!-- Domain Shift Section -->
-    <section class="section hero">
+    <section class="hero" style="padding-top: 0; margin-top: 0;">
       <div class="container is-max-desktop">
         <h2 class="title is-3 has-text-centered">Domain Shift</h2>
-        <div class="columns is-vcentered" style="margin-top: 2rem;">
+        <div class="columns is-vcentered" style="margin-top: 0; margin-bottom: 0;">
           <!-- Left side: Text Bullets -->
           <div class="column is-half content has-text-left">
-            <ul class="custom-checkmarks" style="list-style: none; margin-left: 0; margin-top: 0;">
+            <ul style="margin-top: 0;">
               <!-- TODO: Edit your domain shift bullets here -->
-              <li style="display: flex; align-items: flex-start; margin-bottom: 0.5rem;">
-                <span class="icon" style="color: #363636; margin-right: 0.5rem; flex-shrink: 0;"><i
-                    class="fas fa-check"></i></span>
-                <div><strong>Domain shift observed:</strong> Detail the domain shift observed in real scans here.</div>
+              <li>
+                <strong>Domain shift observed:</strong> Detail the domain shift observed in real scans here.
               </li>
-              <li style="display: flex; align-items: flex-start; margin-bottom: 0.5rem;">
-                <span class="icon" style="color: #363636; margin-right: 0.5rem; flex-shrink: 0;"><i
-                    class="fas fa-check"></i></span>
-                <div><strong>Real vs. Synthetic:</strong> Models trained on synthetic downscaled data produce
-                  artificially sharper predictions.</div>
+              <li>
+                <strong>Real vs. Synthetic:</strong> Models trained on synthetic downscaled data produce
+                artificially sharper predictions.
               </li>
-              <li style="display: flex; align-items: flex-start; margin-bottom: 0.5rem;">
-                <span class="icon" style="color: #363636; margin-right: 0.5rem; flex-shrink: 0;"><i
-                    class="fas fa-check"></i></span>
-                <div><strong>Structural smoothing:</strong> Training on real low-resolution scans reveals fine structure
-                  smoothing instead of recovery.</div>
+              <li>
+                <strong>Structural smoothing:</strong> Training on real low-resolution scans reveals fine structure
+                smoothing instead of recovery.
               </li>
             </ul>
           </div>
