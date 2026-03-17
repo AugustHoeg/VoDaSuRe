@@ -4,7 +4,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(BASE_DIR)  # go up one folder
 
-out_filename = "domain_shift_v3"
+out_filename = "model_comparison_v1_vodasure_only"
 input_folder = os.path.join(PROJECT_ROOT, "static", "pdfs")
 output_file = os.path.join(PROJECT_ROOT, "static", "pdfs", out_filename + ".pdf")
 
@@ -12,9 +12,18 @@ orientation = "vertical"
 save_as_image = True
 image_format = "png" # or "jpg"
 
+#file_names = [
+#    "Ablation_input_ablation_input_27_256_website.pdf",
+#    "Ablation_input_ablation_input_18_256_website.pdf",
+#]
+
 file_names = [
-    "Ablation_input_ablation_input_27_256_website.pdf",
-    "Ablation_input_ablation_input_18_256_website.pdf",
+    #"CTSpine1K_img_idx_[72]_128.pdf",
+    #"LIDC-IDRI_img_idx_[72]_128.pdf",
+    "VoDaSuRe_DOWN_img_idx_[45]_128.pdf",
+    "VoDaSuRe_img_idx_[45]_128.pdf",
+    "VoDaSuRe_DOWN_img_idx_[63]_128.pdf",
+    "VoDaSuRe_img_idx_[63]_128.pdf",
 ]
 
 files = [os.path.join(input_folder, f) for f in file_names]
