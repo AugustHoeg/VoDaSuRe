@@ -4,18 +4,17 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(BASE_DIR)  # go up one folder
 
+out_filename = "domain_shift"
 input_folder = os.path.join(PROJECT_ROOT, "static", "pdfs")
-output_file = os.path.join(PROJECT_ROOT, "static", "pdfs", "examples_stitched.pdf")
+output_file = os.path.join(PROJECT_ROOT, "static", "pdfs", out_filename + ".pdf")
 
 orientation = "vertical"
 save_as_image = True
 image_format = "png" # or "jpg"
 
 file_names = [
-    "Examples_1.pdf",
-    "Examples_2.pdf",
-    "Examples_4.pdf",
-    "Examples_3.pdf",
+    "Ablation_input_ablation_input_27_256_website.pdf",
+    "Ablation_input_ablation_input_18_256_website.pdf",
 ]
 
 files = [os.path.join(input_folder, f) for f in file_names]
@@ -68,7 +67,7 @@ print(f"Saved stitched PDF as {output_file}")
 
 # Option to save as image
 if save_as_image:
-    image_output_file = os.path.join(PROJECT_ROOT, "static", "images", f"examples_stitched.{image_format}")
+    image_output_file = os.path.join(PROJECT_ROOT, "static", "images", f"{out_filename}.{image_format}")
     # Render the page to an image
     pix = new_page.get_pixmap(dpi=300) 
     pix.save(image_output_file)

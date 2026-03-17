@@ -429,22 +429,23 @@
     <!-- Domain Shift Section -->
     <section class="hero" style="padding-top: 0; margin-top: 0;">
       <div class="container is-max-desktop">
-        <h2 class="title is-3 has-text-centered">Domain Shift</h2>
+        <h2 class="title is-4 has-text-centered">Domain shift revealed in volumetric super-resolution</h2>
         <div class="columns is-vcentered" style="margin-top: 0; margin-bottom: 0;">
           <!-- Left side: Text Bullets -->
           <div class="column is-half content has-text-left">
             <ul style="margin-top: 0;">
               <!-- TODO: Edit your domain shift bullets here -->
               <li>
-                <strong>Domain shift observed:</strong> Detail the domain shift observed in real scans here.
+                When trained on real low-resolution data using pixel-wise losses, super-resolution models produce
+                oversmoothed predictions, failing to recover fine structures.
               </li>
               <li>
-                <strong>Real vs. Synthetic:</strong> Models trained on synthetic downscaled data produce
-                artificially sharper predictions.
+                Models trained on synthetically downscaled data produce impressive results on synthetic data, but fail
+                to generalize to realistically acquired volumetric data.
               </li>
               <li>
-                <strong>Structural smoothing:</strong> Training on real low-resolution scans reveals fine structure
-                smoothing instead of recovery.
+                When evaluated on real low-resolution data, models trained on synthetic data hallucinate
+                structures that are not present in the data.
               </li>
             </ul>
           </div>
@@ -452,11 +453,11 @@
           <div class="column is-half has-text-centered">
             <figure class="image">
               <!-- TODO: Add domain shift visualization image path here -->
-              <img src="" alt="" loading="lazy"
+              <img src="static/images/domain_shift.png" alt="Domain Shift Visualization" loading="lazy"
                 style="background-color: #e0e0e0; min-height: 250px; border-radius: 8px;" />
               <figcaption class="subtitle has-text-centered is-size-6" style="margin-top: 1rem;">
                 <!-- TODO: Update with your specific figure caption -->
-                Caption describing the domain shift visualization.
+                Domain shift revealed in volumetric super-resolution.
               </figcaption>
             </figure>
           </div>
@@ -470,7 +471,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-full">
-            <h2 class="title is-3">Sample Overview</h2>
+            <h2 class="title is-4">VoDaSuRe Sample Overview</h2>
             <figure class="image">
               <img src="static/images/viz_stitched_no_background.png" alt="Sample Overview Visualization"
                 loading="lazy" />
