@@ -580,7 +580,7 @@
         <div style="margin-top: 1rem;">
           <figure class="image">
             <img src="static/images/VoDaSuRe_pre_v3.png" alt="Overview of the data preprocessing pipeline"
-              loading="lazy"/>
+              loading="lazy" />
             <figcaption class="subtitle has-text-left" style="margin-top: 1rem;">
               <!-- TODO: Update with your specific figure caption -->
               Figure 3: Visualization of the data preprocessing pipeline.
@@ -603,7 +603,7 @@
         <div style="margin-top: 1rem;">
           <figure class="image">
             <img src="static/images/registration_overview_v1.png" alt="Preprocessing Step 2 Visualization"
-                 loading="lazy" />
+              loading="lazy" />
             <figcaption class="subtitle has-text-left" style="margin-top: 1rem;">
               <!-- TODO: Update with your specific figure caption -->
               Figure 4: Visualization of the second data preprocessing step.
@@ -751,55 +751,65 @@
                 <em>Overview of dataset samples with volume shapes and slice splits.</em>
               </p>
             </div>
+
+            <!-- Download Button -->
+            <div class="has-text-centered" style="margin-top: 0;">
+              <a href="https://zenodo.org/" target="_blank" class="button is-dark is-rounded"
+                style="width: 80%; max-width: 300px;">
+                <span>Download VoDaSuRe</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- End Overview of VoDaSuRe Section -->
 
-    <!-- Image carousel -->
-    <section class="hero is-small is-dark">
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title is-3 has-text-centered">Image Gallery</h2>
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/VoDaSuRe_pre_v3.png" alt="First research result visualization"
-                loading="lazy" />
-              <h2 class="subtitle has-text-centered">
-                First image description.
-              </h2>
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/VoDaSuRe_pre_v3.png" alt="Second research result visualization"
-                loading="lazy" />
-              <h2 class="subtitle has-text-centered">
-                Second image description.
-              </h2>
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/VoDaSuRe_pre_v3.png" alt="Third research result visualization"
-                loading="lazy" />
-              <h2 class="subtitle has-text-centered">
-                Third image description.
-              </h2>
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/VoDaSuRe_pre_v3.png" alt="Fourth research result visualization"
-                loading="lazy" />
-              <h2 class="subtitle has-text-centered">
-                Fourth image description.
-              </h2>
+    <!-- Image carousel (Hidden via display:none) -->
+    <div style="display: none;" id="hidden-carousel">
+      <section class="hero is-small is-dark">
+        <div class="hero-body">
+          <div class="container" style="margin-bottom: 0;">
+            <h2 class="title is-3 has-text-centered">Image Gallery</h2>
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item">
+                <!-- Your image here -->
+                <img src="static/images/VoDaSuRe_pre_v3.png" alt="First research result visualization" loading="lazy" />
+                <h2 class="subtitle has-text-centered">
+                  First image description.
+                </h2>
+              </div>
+              <div class="item">
+                <!-- Your image here -->
+                <img src="static/images/VoDaSuRe_pre_v3.png" alt="Second research result visualization"
+                  loading="lazy" />
+                <h2 class="subtitle has-text-centered">
+                  Second image description.
+                </h2>
+              </div>
+              <div class="item">
+                <!-- Your image here -->
+                <img src="static/images/VoDaSuRe_pre_v3.png" alt="Third research result visualization" loading="lazy" />
+                <h2 class="subtitle has-text-centered">
+                  Third image description.
+                </h2>
+              </div>
+              <div class="item">
+                <!-- Your image here -->
+                <img src="static/images/VoDaSuRe_pre_v3.png" alt="Fourth research result visualization"
+                  loading="lazy" />
+                <h2 class="subtitle has-text-centered">
+                  Fourth image description.
+                </h2>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <!-- End image carousel -->
+
+
 
 
 
@@ -829,7 +839,7 @@
 
 
     <!--BibTex citation -->
-    <section class="section" id="BibTeX">
+    <section class="section" id="BibTeX" style="padding-top: 0;">
       <div class="container is-max-desktop content">
         <div class="bibtex-header">
           <h2 class="title">BibTeX</h2>
@@ -838,7 +848,7 @@
             <span class="copy-text">Copy</span>
           </button>
         </div>
-        <pre id="bibtex-code"><code>@article{YourPaperKey2024,
+        <pre id="bibtex-code"><code>@article{Hoeg2026VoDaSuRe,
   title={VoDaSuRe: A Large-Scale Dataset Revealing Domain Shift in Volumetric Super-Resolution},
   author={August Leander Høeg and Sophia W. Bardenfleth and Hans Martin Kjer and Tim B. Dyrby and Vedrana Andersen Dahl and Anders Dahl},
   journal={Computer Vision and Pattern Recognition (CVPR)},
