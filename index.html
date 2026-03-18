@@ -509,12 +509,14 @@
         <!-- Model Comparison Image -->
         <div class="columns is-centered has-text-left" style="margin-top: 0;">
           <div class="column is-full">
-            <h3 class="title is-4 has-text-left">Large-scale comparative model study</h3>
+            <h3 class="title is-4 has-text-left">Comprehensive Benchmarking</h3>
             <div class="content has-text-justified">
               <p class="is-size-6" style="margin-bottom: 0; padding-bottom: 0;">
                 <!-- TODO: Add text describing the model comparison here -->
                 We evaluate a wide range of state-of-the-art super-resolution models on the VoDaSuRe dataset, including
-                2D and 3D models.
+                2D and volumetric SR models. We observe that models trained on synthetic LR data are able to recover
+                most of the high-frequency information, while the same models trained on real LR data hallucinate
+                over-smoothed microstructures.
               </p>
             </div>
           </div>
@@ -525,8 +527,8 @@
               loading="lazy" />
             <figcaption class="subtitle is-size-6 is-italic has-text-centered" style="margin-top: 1rem;">
               <!-- TODO: Update with your specific figure caption -->
-              Comparison of baseline models trained on the VoDaSuRe dataset using both synthetic and real low-resolution
-              data.
+              Comparison of baseline SR models trained on the VoDaSuRe dataset using both synthetic and real
+              low-resolution data.
             </figcaption>
           </figure>
         </div>
@@ -534,12 +536,15 @@
         <!-- Stitched PDF Results -->
         <div class="columns is-centered has-text-left" style="margin-top: 3rem;">
           <div class="column is-full">
-            <h3 class="title is-4 has-text-left">Qualitative Comparison</h3>
+            <h3 class="title is-4 has-text-left">Synthetic vs. Real Data</h3>
             <div class="content has-text-justified">
               <p class="is-size-6" style="margin-bottom: 0; padding-bottom: 0;">
                 <!-- TODO: Add text describing the qualitative comparison here -->
-                Brief description of the qualitative super-resolution outputs shown below. Highlight specific structural
-                improvements or artifacts.
+                We compute total variation (TV) to quantify the loss of high-frequency information in SR
+                predictions. We observe that TV decreases notably in SR predictions using downscaled LR inputs compared
+                with HR data. Yet, we observe an even lower TV in predictions using scanned LR data. This substantial
+                loss of fine-scale structural detail confirms that super-resolution of real LR data is a significantly
+                harder problem than upscaling downscaled LR volumes.
               </p>
             </div>
           </div>
@@ -549,7 +554,9 @@
             <img src="static/images/examples_stitched.png" alt="Stitched PDF Results" loading="lazy" />
             <figcaption class="subtitle is-size-6 is-italic has-text-centered" style="margin-top: 1rem;">
               <!-- TODO: Update with your specific figure caption -->
-              Qualitative comparison of super-resolution outputs on the VoDaSuRe dataset.
+              Visualizations from the VoDaSuRe dataset. Top row: HR data, second row: SR predictions using
+              downsampled LR data, third row: SR predictions using real LR data, fourth row: SR predictions on real LR
+              data obtained from training on synthetic LR data.
             </figcaption>
           </figure>
         </div>
