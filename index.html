@@ -482,6 +482,15 @@
                 Overview of the different material samples included in the VoDaSuRe dataset.
               </figcaption>
             </figure>
+
+            <div class="content has-text-justified" style="margin-top: 2rem;">
+              <p>
+                <!-- TODO: Describe the samples in the dataset here -->
+                Write your description of the different material samples and microstructures included in the dataset
+                here. You can detail the composition of the wood, composites, bone, and other materials visually
+                depicted above.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -491,26 +500,30 @@
     <!-- Results Text Section -->
     <section class="section hero">
       <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
+        <div class="columns is-centered has-text-centered" style="margin-top: 0;" style="margin-bottom: 0;">
+          <div class="column is-full">
             <h2 class="title is-3">Results</h2>
-            <div class="content has-text-justified">
-              <p>
-                <!-- TODO: Add your results description and text here -->
-                Insert your qualitative and quantitative results here. You can describe the performance of your baseline
-                models trained on VoDaSuRe, discuss the domain shift observed, and elaborate on how training on real
-                down-sampled scans differs from training on synthetic downscaled data.
-              </p>
-            </div>
           </div>
         </div>
 
         <!-- Model Comparison Image -->
-        <div style="margin-top: 2rem;">
+        <div class="columns is-centered has-text-left" style="margin-top: 0;">
+          <div class="column is-full">
+            <h3 class="title is-4 has-text-left">Large-scale comparative model study</h3>
+            <div class="content has-text-justified">
+              <p>
+                <!-- TODO: Add text describing the model comparison here -->
+                We evaluate a wide range of state-of-the-art super-resolution models on the VoDaSuRe dataset, including
+                2D and 3D models.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 1rem;">
           <figure class="image">
             <img src="static/images/model_comparison_v1_vodasure_only.png" alt="Model Comparison Results"
               loading="lazy" />
-            <figcaption class="subtitle has-text-centered" style="margin-top: 1rem;">
+            <figcaption class="subtitle has-text-left" style="margin-top: 1rem;">
               <!-- TODO: Update with your specific figure caption -->
               Figure 1: Comparison of baseline models trained on the VoDaSuRe dataset.
             </figcaption>
@@ -518,10 +531,22 @@
         </div>
 
         <!-- Stitched PDF Results -->
-        <div style="margin-top: 2rem;">
+        <div class="columns is-centered has-text-left" style="margin-top: 3rem;">
+          <div class="column is-full">
+            <h3 class="title is-4 has-text-left">Qualitative Comparison</h3>
+            <div class="content has-text-justified">
+              <p>
+                <!-- TODO: Add text describing the qualitative comparison here -->
+                Brief description of the qualitative super-resolution outputs shown below. Highlight specific structural
+                improvements or artifacts.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 1rem;">
           <figure class="image">
             <img src="static/images/examples_stitched.png" alt="Stitched PDF Results" loading="lazy" />
-            <figcaption class="subtitle has-text-centered" style="margin-top: 1rem;">
+            <figcaption class="subtitle has-text-left" style="margin-top: 1rem;">
               <!-- TODO: Update with your specific figure caption -->
               Figure 2: Qualitative comparison of super-resolution outputs on the VoDaSuRe dataset.
             </figcaption>
@@ -531,8 +556,66 @@
     </section>
     <!-- End Results Text Section -->
 
-    <!-- Overview of VoDaSuRe Section (Dataset Table) -->
+    <!-- Data Preprocessing Section -->
     <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered" style="margin-top: 0; margin-bottom: 0;">
+          <div class="column is-full">
+            <h2 class="title is-3">Data Preprocessing</h2>
+          </div>
+        </div>
+
+        <!-- Data Pipeline -->
+        <div class="columns is-centered has-text-left" style="margin-top: 0;">
+          <div class="column is-full">
+            <h3 class="title is-4 has-text-left">Data Pipeline</h3>
+            <div class="content has-text-justified">
+              <p>
+                <!-- TODO: Add text describing the data pipeline here -->
+                Brief description of the data pipeline applied to the scans.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 1rem;">
+          <figure class="image">
+            <img src="static/images/VoDaSuRe_pre_v3.png" alt="Overview of the data preprocessing pipeline"
+              loading="lazy"/>
+            <figcaption class="subtitle has-text-left" style="margin-top: 1rem;">
+              <!-- TODO: Update with your specific figure caption -->
+              Figure 3: Visualization of the data preprocessing pipeline.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Second Preprocessing Step -->
+        <div class="columns is-centered has-text-left" style="margin-top: 3rem;">
+          <div class="column is-full">
+            <h3 class="title is-4 has-text-left">Registration</h3>
+            <div class="content has-text-justified">
+              <p>
+                <!-- TODO: Add text describing the second preprocessing step here -->
+                Brief description of the next data preprocessing step applied to the scans.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 1rem;">
+          <figure class="image">
+            <img src="static/images/registration_overview_v1.png" alt="Preprocessing Step 2 Visualization"
+                 loading="lazy" />
+            <figcaption class="subtitle has-text-left" style="margin-top: 1rem;">
+              <!-- TODO: Update with your specific figure caption -->
+              Figure 4: Visualization of the second data preprocessing step.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- End Data Preprocessing Section -->
+
+    <!-- Overview of VoDaSuRe Section (Dataset Table) -->
+    <section class="section hero">
       <div class="container is-max-desktop">
         <h2 class="title is-3 has-text-centered">Overview of VoDaSuRe</h2>
         <div class="columns is-centered has-text-centered">
@@ -682,7 +765,7 @@
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item">
               <!-- Your image here -->
-              <img src="static/images/VoDaSuRe_preprocessing_4.png" alt="First research result visualization"
+              <img src="static/images/VoDaSuRe_pre_v3.png" alt="First research result visualization"
                 loading="lazy" />
               <h2 class="subtitle has-text-centered">
                 First image description.
@@ -690,7 +773,7 @@
             </div>
             <div class="item">
               <!-- Your image here -->
-              <img src="static/images/VoDaSuRe_preprocessing_4.png" alt="Second research result visualization"
+              <img src="static/images/VoDaSuRe_pre_v3.png" alt="Second research result visualization"
                 loading="lazy" />
               <h2 class="subtitle has-text-centered">
                 Second image description.
@@ -698,7 +781,7 @@
             </div>
             <div class="item">
               <!-- Your image here -->
-              <img src="static/images/VoDaSuRe_preprocessing_4.png" alt="Third research result visualization"
+              <img src="static/images/VoDaSuRe_pre_v3.png" alt="Third research result visualization"
                 loading="lazy" />
               <h2 class="subtitle has-text-centered">
                 Third image description.
@@ -706,7 +789,7 @@
             </div>
             <div class="item">
               <!-- Your image here -->
-              <img src="static/images/VoDaSuRe_preprocessing_4.png" alt="Fourth research result visualization"
+              <img src="static/images/VoDaSuRe_pre_v3.png" alt="Fourth research result visualization"
                 loading="lazy" />
               <h2 class="subtitle has-text-centered">
                 Fourth image description.

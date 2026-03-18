@@ -4,7 +4,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(BASE_DIR)  # go up one folder
 
-out_filename = "model_comparison_v1_vodasure_only"
+out_filename = "registration_overview_v1"
 input_folder = os.path.join(PROJECT_ROOT, "static", "pdfs")
 output_file = os.path.join(PROJECT_ROOT, "static", "pdfs", out_filename + ".pdf")
 
@@ -20,10 +20,13 @@ image_format = "png" # or "jpg"
 file_names = [
     #"CTSpine1K_img_idx_[72]_128.pdf",
     #"LIDC-IDRI_img_idx_[72]_128.pdf",
-    "VoDaSuRe_DOWN_img_idx_[45]_128.pdf",
-    "VoDaSuRe_img_idx_[45]_128.pdf",
-    "VoDaSuRe_DOWN_img_idx_[63]_128.pdf",
-    "VoDaSuRe_img_idx_[63]_128.pdf",
+    "supplementary_registration_0.pdf",
+    "supplementary_registration_8.pdf",
+    #"supplementary_registration_1.pdf",
+    #"supplementary_registration_10.pdf",
+    "supplementary_registration_4.pdf",
+    "supplementary_registration_12.pdf",
+
 ]
 
 files = [os.path.join(input_folder, f) for f in file_names]
